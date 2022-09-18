@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">New Password Generator</h1>
+      <p class="description">
+        Generate a randomized password for a more secure experience online.
+      </p>
+      <h3 class="password-display" id="password-display">password</h3>
+      <div class="customizers">
+        <form id="form">
+          <div class="character-range">
+            <label for="character-range" class="input-label">
+              Number of characters:
+            </label>
+
+            <div class="input-and-value">
+              <div class="input-container">
+                <p class="slider-max-min">5</p>
+                <input
+                  type="range"
+                  min="5"
+                  max="25"
+                  value="1"
+                  id="character-range"
+                  class="character-range-slider"
+                />
+                <p class="slider-max-min">25</p>
+              </div>
+              <p class="slider-value">
+                <span id="value"></span>
+              </p>
+            </div>
+          </div>
+
+          <div class="checkboxes">
+            <input type="checkbox" id="include-lowercase" name="lowercase" />
+            <label for="lowercase">Include lowercase</label>
+
+            <input type="checkbox" id="include-uppercase" name="uppercase" />
+            <label for="uppercase">Include uppercase</label>
+
+            <input type="checkbox" id="include-numbers" name="numbers" />
+            <label for="numbers">Include numbers</label>
+
+            <input type="checkbox" id="include-symbols" name="symbols" />
+            <label for="symbols">Include symbols</label>
+          </div>
+          <button type="submit" class="generate-btn">
+            Generate New Password
+          </button>
+        </form>
+      </div>
+      <p id="error-message" class="error-message hide">
+        You must select at least one type of character
+      </p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

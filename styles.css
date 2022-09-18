@@ -1,0 +1,143 @@
+html {
+  background-color: rgb(32, 32, 32);
+}
+
+.title {
+  color: rgb(164, 164, 232);
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 5px 7px 5px rgba(0, 0, 0, 0.545);
+}
+
+.description {
+  color: rgb(193, 193, 227);
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 5px 7px 5px rgba(0, 0, 0, 0.545);
+}
+
+.password-display {
+  background-color: rgb(50, 50, 50);
+  color: rgb(193, 193, 227);
+  text-align: center;
+  padding: 1rem;
+  border: 2px solid rgb(164, 164, 232);
+  border-radius: 4px;
+  height: 2rem;
+  width: 350px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.48);
+}
+
+.customizers {
+  color: rgb(193, 193, 227);
+  text-align: center;
+  border: 2px solid rgb(164, 164, 232);
+  border-radius: 4px;
+  margin-top: 60px;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.48);
+  background-color: rgb(50, 50, 50);
+}
+
+.character-range {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 5px 7px 5px rgba(0, 0, 0, 0.545);
+}
+
+.input-label {
+  margin-right: 30px;
+}
+
+.slider-value {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.input-and-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.character-range-slider {
+  -webkit-appearance: none;
+  background: rgb(164, 164, 232);
+  height: 8px;
+  border-radius: 12px;
+  transition: 0.2s;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.48);
+}
+
+.character-range-slider:hover {
+  cursor: pointer;
+}
+
+.character-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider-max-min {
+  color: white;
+  text-shadow: 5px 7px 5px rgba(0, 0, 0, 0.545);
+}
+
+.checkboxes {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  text-shadow: 5px 7px 5px rgba(0, 0, 0, 0.545);
+}
+
+.generate-btn {
+  margin-top: 60px;
+  background-color: rgb(164, 164, 232);
+  color: white;
+  border: 1px solid white;
+  border-radius: 40px;
+  height: 60px;
+  width: 200px;
+  font-size: 15px;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.48);
+  margin-bottom: 30px;
+}
+
+.generate-btn:hover {
+  background-color: rgb(115, 115, 164);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.error-message {
+  transition: opacity 0.25s ease;
+  color: red;
+  text-align: center;
+  font-size: 20px;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
